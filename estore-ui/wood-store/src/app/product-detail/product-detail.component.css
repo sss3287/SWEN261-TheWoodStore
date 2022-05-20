@@ -1,0 +1,80 @@
+.center{
+  float: left;
+  text-align: center;
+  margin: -35px 0 0 0 ;
+  width: 33.33%;
+  padding: 10px;
+}
+
+label{
+  color: #435960;
+  font-weight: bold;
+}
+select{
+  width:25%;
+  height:25px;
+}
+input {
+  font-size: 1em;
+  padding: .5rem;
+}
+.clickable{
+  width:340px;
+  height:50px;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+nav a button{
+  width: 300px;
+}
+
+.name {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  width: 10%;
+  font-size: 160%;
+  color: #274001;
+  font-weight: 300;
+}
+
+.price {
+  margin-left: auto;
+  margin-right: auto;
+  width: 3%;
+  font-size: 120%;
+  color:#274001;
+  margin-bottom: 2%;
+}
+
+.wood {
+  margin-left: 32%;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: .5%;
+}
+
+.varnish {
+  margin-left: 32%;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 1%;
+}
+
+.engrave {
+  margin-left: 36%;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: .5%;
+}
+.add {
+  margin-left: 36%;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 1%;
+
+}

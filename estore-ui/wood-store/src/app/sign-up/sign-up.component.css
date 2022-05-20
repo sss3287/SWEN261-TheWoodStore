@@ -1,0 +1,71 @@
+.center{
+    text-align: center;
+    margin: auto;
+    width: 33%;
+    padding: 10px;
+}
+
+.left-aligned{
+    text-align: left;
+    margin-left:40px;
+    width: 100%;
+    padding: .75%;
+}
+
+.header{
+    margin-bottom: 5%;
+}
+
+.login-field{
+    background-color: #EBF1F2;
+    height: 14rem;
+    margin-top: 500px;
+}
+
+#login{
+    margin-top:8%
+}
+
+.center-alligned{
+    text-align: center;
+    margin: auto;
+    width: 27%;    
+}
+
+.text-field{
+        border: none;
+        -webkit-appearance: none;
+        -ms-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: #ffffff;
+        padding: 10px;
+        border-radius: 3px;
+        width: 75%;
+        font-size: 14px;
+}
+
+h3{
+    font-style: italic;
+    text-align: center;
+    margin-top:0px;
+    width: 33%;
+    padding: 5px;
+  }
+  h2{
+    font-size: 28px;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom:0px;
+    width: 33%;
+    padding: 10px;
+  }
+  
+  h1{
+    font-size:55px;
+    text-align: center;
+    margin:auto;
+    margin-top: 2%;
+    width: 33%;
+    padding: 10px;
+  }

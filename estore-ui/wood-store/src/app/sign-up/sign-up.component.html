@@ -1,0 +1,28 @@
+
+<head>
+    <style>
+        body{
+            min-height: 100vh;
+	        width: 99%;
+            background-image: url('assets/images/forest.png');
+            background-attachment: fixed;  
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <br>
+        <h2 class="text left-aligned" style="color: #ABB46C;">A store for wood</h2>
+        <h3 class="text left-aligned" style="color: #ABB46C;">"You need wood? We got you."</h3>
+    </div>
+<div class="center-alligned login-field">
+    <br>
+    <h4 class="center text">Create an Account</h4>
+    <br>
+    <input class="text-field" type="text" id="uname" name="uname" placeholder="Username"><br><br>
+        <button class=" text" type="button" style="margin-right: 6%; margin-top: 3%; height: 2.29rem; width: 33%;" (click)=createUser()>Create Account</button>
+        <button class=" text" type="button" style="height: 2.29rem; width: 33%;" (click)=navigateToLogin()>Cancel</button>
+        <div *ngIf="!isValidSignUp"><p class = "text">Sorry, that login is taken.</p></div>
+</div>
+</body>

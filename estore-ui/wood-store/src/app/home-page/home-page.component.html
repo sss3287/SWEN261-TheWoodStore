@@ -1,0 +1,53 @@
+<body>
+  <div class="flex-container">
+    <nav>
+      <a routerLink="/login" style="color: none; text-decoration: none;">
+        <button class="center" type="button" (click)="homeLogOut()">Logout</button>
+      </a>
+  
+  
+      <a routerLink="/browse" style="color: none; text-decoration: none;">
+        <button class="center location" type="button">Browse</button>
+      </a>
+  
+  
+      <a routerLink="/shoppingcart" style="color: none; text-decoration: none;">
+        <button class="center" type="button">Shopping Cart</button>
+      </a>
+    </nav>
+  </div>
+
+<app-product-search></app-product-search>
+
+<label for="search-box" class = "text" style="color: #274001;" >Max Price:</label> 
+<input #maxBox type="number" (input)="search(this.value)" [(ngModel)]="value">
+
+<div class="grid-container" style="padding-top: 4%;">
+  <ng-container *ngFor="let product of products$ | async">
+    <ul class="products text">
+      <a routerLink="/detail/{{product.id}}">
+        <div class ="name">{{product.name}} 
+          <ng-container *ngIf="product.quantity == 0">(Out of Stock)</ng-container><br></div>
+        <div class="price">{{product.price | currency}}</div>
+      </a>
+    </ul>
+  </ng-container>
+</div>
+
+<div *ngIf="this.check">
+  <div class="title">All Products</div> <!-- will not show, just used for spacing -->
+  <div class="grid-container">
+    <ng-container *ngFor="let product of products">
+      <ul class="products text">
+        <a routerLink="/detail/{{product.id}}">
+          <div class ="name">{{product.name}} 
+            <ng-container *ngIf="product.quantity == 0">(Out of Stock)</ng-container><br></div>
+          <div class="price">{{product.price | currency}}</div>
+        </a>
+      </ul>
+    </ng-container>
+  </div>
+</div>
+
+
+</body>

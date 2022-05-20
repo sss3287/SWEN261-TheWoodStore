@@ -1,0 +1,32 @@
+commit 788840ac316ac20c1a5825b51349eefd3a248ed4
+Merge: b6618bd eb1aa91
+Author: Miguel Reyes <miguel.reyes0588@gmail.com>
+Date:   Tue Feb 1 19:29:01 2022 -0500
+
+    Merge branch 'main' of github.com:RIT-SWEN-261-06/team-project-2215-swen-261-06-b-error451
+    
+    Git activity
+
+commit b6618bdc94f9594bef99a8cb0040bf65177cce7d
+Author: Miguel Reyes <miguel.reyes0588@gmail.com>
+Date:   Tue Feb 1 19:27:31 2022 -0500
+
+    Hello Ive pushed my edits
+
+commit eb1aa9139bc67e4ef4b1e468aa7ad045b08e2fbf
+Author: cjc8646 <cjc8646@rit.edu>
+Date:   Tue Feb 1 19:24:05 2022 -0500
+
+    Caitlyn checking in
+
+commit 3295357c1f56686331dd6f0654738f33265e7d52
+Author: Teagan Nester <ten2068@g.rit.edu>
+Date:   Tue Feb 1 19:21:26 2022 -0500
+
+    added team member names
+
+commit 74e6263a8aa35eb329f88a989b311d20fcb8a2e7
+Author: github-classroom[bot] <66690702+github-classroom[bot]@users.noreply.github.com>
+Date:   Wed Feb 2 00:01:20 2022 +0000
+
+    Initial commit

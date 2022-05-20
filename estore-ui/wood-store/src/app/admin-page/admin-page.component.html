@@ -1,0 +1,41 @@
+<div class="flex-container">
+  <nav>
+    <a routerLink="/login" style="color: none; text-decoration: none;">
+      <button class="center" type="button" (click)="adminLogOut()">Logout</button>
+    </a>
+
+    <a routerLink="/admin" style="color: none; text-decoration: none;">
+      <button class="location center" type="button" (click)="adminDetailBrowse()">Home</button>
+    </a>      
+  </nav>
+</div>
+
+<div class="search"><app-product-search></app-product-search></div>
+
+<div class="add">
+  <label for="new-product">Product Name:</label>
+  <input id="new-product" #productName />
+  <button type="button" class="add-button" (click)="add(productName.value); productName.value=''">
+    Add Product
+  </button>
+</div>
+
+<h2>Inventory</h2>
+
+<div class="grid-container">
+    <ng-container *ngFor="let product of products">
+      <ul class="products">
+        <button type="button" class="delete" title="delete product"
+          (click)="delete(product)">Delete X</button>
+        <a routerLink="/admin-detail/{{product.id}}">
+          <div class="name"><strong>{{product.name}}</strong></div>
+          <div class="info">
+            Id: {{product.id}}<br>
+            {{product.price | currency}}<br>
+            Quantity: {{product.quantity}}
+          </div>
+        </a>
+      </ul>
+    </ng-container>
+</div>
+

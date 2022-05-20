@@ -1,0 +1,27 @@
+  <div class="flex-container">
+    <nav>
+      <a routerLink="/login" style="color: none; text-decoration: none;">
+        <button class="center" type="button" (click)="adminDetailLogOut()">Logout</button>
+      </a>
+  
+      <a routerLink="/admin" style="color: none; text-decoration: none;">
+        <button class="center" type="button" (click)="adminDetailBrowse()">Browse</button>
+      </a>      
+    </nav>
+  </div>
+  
+  <div *ngIf="product">
+    <div class="name"><strong>{{ product.name}}</strong><br></div>
+    <div class="id">Id: {{product.id}}</div>
+    <div class="update">
+        <label for="product-price">Product Price:</label>
+        <input id="product-price" [(ngModel)]="product.price" placeholder="Product Price"/>
+
+        <label for="product-quantity">Product Quantity:</label>
+        <input id="product-quantity" [(ngModel)]="product.quantity" placeholder="Product Quantity"  />
+
+        <button type="button" class="update-button" (click)="save()">
+          Update Product
+        </button>
+      </div>
+</div>

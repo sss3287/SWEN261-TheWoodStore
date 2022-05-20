@@ -1,0 +1,44 @@
+<div class="flex-container">
+  <nav>
+    <a routerLink="/login" style="color: none; text-decoration: none;">
+      <button class="center" type="button" (click)="detailLogOut()">Logout</button>
+    </a>
+
+
+    <a routerLink="/browse" style="color: none; text-decoration: none;">
+      <button class="center" type="button">Browse</button>
+    </a>
+
+
+    <a routerLink="/shoppingcart" style="color: none; text-decoration: none;">
+      <button class="center" type="button">Shopping Cart</button>
+    </a>
+  </nav>
+</div>
+
+<div class="detail" *ngIf="product">
+  <div class="name">{{product.name}}</div>
+  <div class="price">{{product.price | currency }}</div>
+  <div class="wood">
+    <label class="text" style="margin-right: .85%" for="wood_type">Wood Type: </label>
+    <select class="wood_type" name="Wood Type" [(ngModel)]="product.woodType" onChange="setWoodType(this)">
+      <option *ngFor="let woodType of woodTypes" [value]="woodType">
+        {{WoodType2LabelMapping[woodType ]}}
+      </option>
+    </select>
+  </div>
+  <div class="varnish">
+    <label class="text" for="varnish_type">Varnish Type: </label>
+    <select class="varnish_type" name="Varnish Type" [(ngModel)]="product.varnishType" onChange="setVarnishType(this)">
+      <option *ngFor="let varnishType of varnishTypes" [value]="varnishType">
+        {{VarnishType2LabelMapping[varnishType]}}
+      </option>
+    </select>
+  </div>
+  <div class="engrave">
+    <label class="text" for="engraving">Engraving (Optional): </label>
+    <input id="engraving" [(ngModel)]="product.engraving" placeholder="Custom Text" />
+  </div>
+  <br>
+  <button type="button" style="margin-left: 38%" class="clickable text" (click)="addToCart(product)">Add to Cart</button>
+</div>

@@ -1,0 +1,35 @@
+button{
+    background-color: #D3D9A7;
+    border: none;
+    cursor: pointer;
+    
+  }
+
+  button:active{
+    background-color: #FFF09A;
+  }
+
+  button:hover {
+    background-color: #cfd8dc;
+  }
+
+  button:disabled {
+    background-color: #eee;
+    color: #ccc;
+    cursor: auto;
+  }
+
+  .location{
+    float: left;
+    text-align: center;
+    margin: -35px 0 0 0 ;
+    width: 33.33%;
+    padding: 10px;
+    background-color: #A7B44C;
+  }
+  .text{
+    font-family: Helvetica, sans-serif;
+    color: #274001;
+    font-weight: 100;
+}
+  

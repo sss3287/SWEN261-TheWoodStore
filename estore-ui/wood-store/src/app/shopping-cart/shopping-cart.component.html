@@ -1,0 +1,33 @@
+<body>
+  <div class="flex-container">
+    <nav>
+      <a routerLink="/login" style="color: none; text-decoration: none;">
+        <button class="center" type="button" (click)="cartLogOut()">Logout</button>
+      </a>
+  
+  
+      <a routerLink="/browse" style="color: none; text-decoration: none;">
+        <button class="center" type="button">Browse</button>
+      </a>
+  
+  
+      <a routerLink="/shoppingcart" style="color: none; text-decoration: none;">
+        <button class="center location" type="button">Shopping Cart</button>
+      </a>
+    </nav>
+  </div>
+
+<div class="cart-item" *ngFor="let item of products">
+<span><strong>{{ item.name}}: </strong></span>
+<span>{{ item.price | currency }}<br></span>
+<span>Wood Type: {{item.woodType}}<br></span>
+<span>Varnish Type: {{item.varnishType}}<br></span>
+<span>Engraving (Optional): {{item.engraving}}<br></span>
+<button type="button" (click)="removeFromCart(item)">Remove From Cart X</button>
+</div>
+<div *ngIf="!isComplete">
+  <span>Total: {{total | currency}}</span>
+  <div><button type="button" (click)="completeOrder()">Complete Purchase</button></div>
+</div>
+<div *ngIf="isComplete"><p class="text">Your order is complete</p><br><p>Thank you for shopping at theWoodStore</p></div>
+</body>
